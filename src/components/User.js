@@ -11,14 +11,11 @@ class User extends Component {
         salary: "Bilgi yok",
         department: "Bilgi yok"
     }
-    //constructor ile yaparsan state li kısmı sil
-    // constructor(props) {
-    //     super(props);
-    //
-    //     this.state = {
-    //         isVisible: false
-    //     }
-    // }
+
+    onClickEvent = (number, e) =>{
+        console.log(this);
+        console.log(number)
+    }
     render() {
 
         //Destructing
@@ -29,7 +26,7 @@ class User extends Component {
             <div className="col-md-8 mb-4">
                 <div className="card">
                     <div className="card-header d-flex justify-content-between">
-                        <h4 className="d-inline">{name}</h4>
+                        <h4 className="d-inline" onClick={this.onClickEvent.bind(this, 34)}>{name}</h4>
                         <i className="fa fa-trash-alt" style={{cursor: "pointer"}}/>
                     </div>
                     {
