@@ -8,6 +8,7 @@ class User extends Component {
         isVisible: false
     }
     static defaultProps = {
+        id: "Bilgi yok",
         name: "Bilgi yok",
         salary: "Bilgi yok",
         department: "Bilgi yok"
@@ -63,7 +64,8 @@ class User extends Component {
 User.propTypes = {
     name: PropTypes.string.isRequired,
     department : PropTypes.string.isRequired,
-    salary: PropTypes.string.isRequired
+    salary: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired
 }
 
 export default User;
