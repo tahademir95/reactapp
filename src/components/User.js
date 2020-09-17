@@ -27,7 +27,7 @@ class User extends Component {
             <div className="col-md-8 mb-4">
                 <div className="card">
                     <div className="card-header d-flex justify-content-between">
-                        <h4 className="d-inline" onClick={this.onClickEvent}>{name}</h4>
+                        <h4 className="d-inline" onClick={this.onClickEvent} style={{cursor: "pointer"}}>{name}</h4>
                         <i className="fa fa-trash-alt" style={{cursor: "pointer"}}/>
                     </div>
                     {
