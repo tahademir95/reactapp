@@ -17,6 +17,11 @@ class User extends Component {
             isVisible: !this.state.isVisible
         })
     }
+
+    onDeleteUser = (e) => {
+        //const {id} = this.props
+        //Consumer Dispatch
+    }
     render() {
 
         //Destructing
@@ -28,7 +33,7 @@ class User extends Component {
                 <div className="card">
                     <div className="card-header d-flex justify-content-between">
                         <h4 className="d-inline" onClick={this.onClickEvent} style={{cursor: "pointer"}}>{name}</h4>
-                        <i className="fa fa-trash-alt" style={{cursor: "pointer"}}/>
+                        <i className="fa fa-trash-alt" onClick={this.onDeleteUser} style={{cursor: "pointer"}}/>
                     </div>
                     {
                         isVisible ?
