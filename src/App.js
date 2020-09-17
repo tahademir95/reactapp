@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Navbar from "./components/Navbar";
 import Users from "./components/Users";
+import AddUser from "./components/AddUser";
 
 class App extends Component{
 
@@ -11,6 +12,7 @@ class App extends Component{
             <div className="container">
                 <Navbar title="User App2"/>
                 <hr/>
+                <AddUser />
                 <Users />
             </div>
         );
